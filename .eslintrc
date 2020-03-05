@@ -1,10 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "env": {
-    "browser": true,
-    "es6": true
-  },
-  "extends": [
+  "extends": [ // The last rules overwrite the firsts
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "airbnb",
@@ -14,8 +10,20 @@
     "react",
     "prettier"
   ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "rules": {
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
+    }
   }
 }
