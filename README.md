@@ -16,6 +16,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 # Configuration
 - `eslint`, configured for typescript, nextjs (react), prettier, airbnb config.
+- Theme in styles folder using scss for uniformity (sizes, colors) + bootstrap
 
 ## Learn More
 
