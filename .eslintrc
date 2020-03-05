@@ -1,12 +1,21 @@
 {
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "prettier"
   ],
   "rules": {
-    "react/react-in-jsx-scope": "off"
-  },
-  "globals": {
-    "React": "writable"
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": "error"
   }
 }
