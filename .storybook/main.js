@@ -8,6 +8,12 @@ module.exports = {
         presets: [['react-app', { flow: false, typescript: true }]],
       },
     });
+
+    config.module.rules.push({
+      test: /\.scss$/,
+      loaders: ["style-loader", "css-loader", "sass-loader"]
+    });
+
     config.resolve.extensions.push('.ts', '.tsx');
     return config;
   },

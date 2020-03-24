@@ -1,10 +1,10 @@
 import React from "react";
-import TheNavBar from "../components/organisms/TheNavBar.tsx";
+import TheNavBar from "../components/organisms/TheNavBar";
+
+import "../styles/styles.scss";
 
 export default {
   title: "Navigation"
 };
 
-export const yolo = () => {
-  return <TheNavBar />;
-}
+export const theNavBar = () => <TheNavBar />

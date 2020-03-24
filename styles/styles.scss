@@ -1,13 +1,26 @@
+@import './_variables';
 @import '~bootstrap/scss/bootstrap';
 @import './fonts';
+@import './inputs';
 
 body {
   padding: 0;
   margin: 0;
   font-family: 'Silka', Menlo, Monaco, Lucida Console, Liberation Mono,
   DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  font-size: 0.93rem;
 }
 
 * {
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.small {
+
 }
